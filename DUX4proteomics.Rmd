@@ -2,7 +2,14 @@
 title: "DUX4proteomics_figures"
 author: "Sujatha Jagannathan"
 date: "November 21, 2017"
-output: html_document
+output: html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: false
+    fig_caption: yes
+    fig_retina: 1 
+    df_print: paged
+
 ---
 
 ###Set up
