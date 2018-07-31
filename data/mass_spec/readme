@@ -7,3 +7,5 @@ SJ102314_102914_17_28_TargetPeptideSpectrumMatch
 iDUX4 data are too large to uploade here. But available in the following dropbox link:
 SJ042415_051615_31_46_TargetPeptideSpectrumMatch (https://www.dropbox.com/s/tye58w1joqxrv2o/SJ042415_051615_31_46_TargetPeptideSpectrumMatch.txt?dl=0)
 SJ090815_091515_47_62_TargetPeptideSpectrumMatch (https://www.dropbox.com/s/ydbx20uttodjigc/SJ090815_091515_47_62_TargetPeptideSpectrumMatch.txt?dl=0)
+
+Make sure to unzip the vDUX4 data and download the iDUX4 data from drop box and store in this location on your computer before knitting the rmarkdown file. 
