@@ -1,3 +1,3 @@
 # 2018-jagannathan_et_al
 
-Code to make figures in the paper "Extensive post-transcriptional downregulation of RNA surveillance by the myopathic transcription factor DUX4"
+Code to analyze data and make figures in the paper "Quantitative proteomics reveals key roles for post-transcriptional gene regulation in the molecular pathology of FSHD"
