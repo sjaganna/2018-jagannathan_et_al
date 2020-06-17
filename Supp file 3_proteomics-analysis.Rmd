@@ -344,10 +344,8 @@ load("data/rdata/edgeR_foldchange_unfiltered.Rdata")
 rnaseq.unfiltered <- foldchange.unfiltered[, c(2:7, 13:17)]
 names(rnaseq.unfiltered) <- c("geneid", "iDUX4_logFC_UF", "iDUX4_logCPM_UF", "iDUX4_LR_UF", "iDUX4_pval_UF", "iDUX4_fdr_UF", "vDUX4_logFC_UF", "vDUX4_logCPM_UF", "vDUX4_LR_UF", "vDUX4_pval_UF", "vDUX4_fdr_UF")
 
-library(readr)
-rnaseq.filtered <- read_delim("data/rnaseq.filtered.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
-rnaseq.filtered <- rnaseq.filtered[, c(2:7, 13:17)]
-
+load("data/rdata/edgeR.results.Rdata")
+rnaseq.filtered <- foldchange.filtered[, c(2:7, 13:17)]
 names(rnaseq.filtered) <- c("geneid", "iDUX4_logFC", "iDUX4_logCPM", "iDUX4_LR", "iDUX4_pval", "iDUX4_fdr", "vDUX4_logFC", "vDUX4_logCPM", "vDUX4_LR", "vDUX4_pval", "vDUX4_fdr")
 
 rnaseq <- full_join(rnaseq.filtered, rnaseq.unfiltered, by = "geneid")
